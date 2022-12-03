@@ -1,0 +1,11 @@
+{
+    "editor.suggest.showStatusBar": false,
+    "files.autoSave": "afterDelay",
+    "workbench.statusBar.visible": true,
+    "zenMode.hideLineNumbers": true,
+    "editor.fontSize": 12,
+    "debug.console.fontSize": 12,
+    "markdown.preview.fontSize": 12,
+    "terminal.integrated.fontSize": 12,
+    "editor.accessibilityPageSize": 8
+}

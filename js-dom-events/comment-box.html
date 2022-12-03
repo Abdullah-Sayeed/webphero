@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Please give your comment</h1>
+    <div id="comment-container">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque tenetur modi assumenda optio id iste, deleniti aliquid adipisci itaque vel quam odit, atque laudantium minima eius nesciunt? Obcaecati laboriosam ipsam maxime doloribus eius? Quo magnam repudiandae neque ex atque blanditiis labore velit ipsam hic officia nihil eum, pariatur ipsa a.</p>
+    </div>
+    
+    <div>
+        <textarea name="" id="new-comment" cols="60" rows="5"></textarea>
+        <br>
+        <button id="post-button">Post</button>
+    </div>
+    
+    <script>
+        // Step 1: Add event listener to the post button
+        document.getElementById('post-button').addEventListener('click', function(){
+            
+            //step 2: Get the comment inside the text area
+
+            const commentText = document.getElementById('new-comment');
+            const newComment = commentText.value;
+
+            //step 3: set the comment inside the comment-container
+                // 1.get comment container
+                // 2.create new paragraph dom element
+                // 3.assign comment value into new paragraph
+                // 4. append new paragraph in comment container
+                // 5. clear the text field
+
+            const commentContainer = document.getElementById('comment-container');
+
+            const newParagraph = document.createElement('p');
+            newParagraph.innerText = newComment;
+            
+            commentContainer.appendChild(newParagraph);
+
+            commentText.value = ' ';
+        })
+    </script>
+</body>
+</html>

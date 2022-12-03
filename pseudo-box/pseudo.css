@@ -1,0 +1,12 @@
+h1:hover{
+  background-color: black;  
+  color: whitesmoke;
+}
+input:focus{
+    color: brown;
+    background-color: aquamarine;
+    font-weight: bold;
+}
+a:visited{
+    color: red;
+}

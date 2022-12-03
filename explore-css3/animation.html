@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes bounce{
+            0%{
+                top:0px;
+                left: 0px;
+                
+            }
+            25%{
+                top: 450px;
+                left: 500px;
+                animation-timing-function: ease-in;
+            }
+            50%{
+                top: 350px;
+                left: 750px;
+                animation-timing-function: ease-out;
+            }
+            70%{
+                top: 450px;
+                left: 850px;
+            }
+            85%{
+                top: 400px;
+                left: 950px;
+            }
+            100%{
+                top: 450px;
+                left: 0px;
+            }
+        }
+        .playground{
+            height: 500px;
+            width: 1000px;
+            background-color: green;
+
+        }
+        .ball{
+            height: 50px;
+            width: 50px;
+            background-image: linear-gradient(red,black);
+            border-radius: 50%;
+            position: relative;
+            transform: rotate(180deg);
+            animation: bounce 5s linear infinite .5s ;
+            animation-play-state: running;
+        }
+    </style>
+</head>
+<body>
+    <div class="playground">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

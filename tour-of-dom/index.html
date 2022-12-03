@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Of DOM</title>
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <style>
+        .fruits-container li {
+            color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to my DOM</h1>
+    </header>
+    <main id="main-container">
+        <h1>Awesome DOM</h1>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+        </ul>
+        <section class="fruits-container">
+            <h1 id="fruit-title">Fruits I like</h1>
+            <ul>
+                <li>Mango</li>
+                <li>Apple</li>
+                <li>orange</li>
+                <li>Grape</li>
+            </ul>
+        </section>
+        <section id="places-container">
+            <h1 id="places-title" class="text-center large-text">Place I like to visit</h1>
+            <ul id="places-list">
+                <li class="important-places">Bandarban</li>
+                <li class="important-places">Rangamati</li>
+                <li class="important-places">Cox-bazar</li>
+                <li class="important-places">Saint-martin</li>
+            </ul>
+        </section>
+    </main>
+
+
+    <!-- <script src="js/dom.js"></script> -->
+
+    <script src="js/styleInJs.js"></script>
+    <script src="js/append.js"></script>
+    <script>
+
+        /* 
+            const liCollection = document.getElementsByTagName('li');
+            for(const li of liCollection){
+                console.log(li.innerText);
+            }
+            const headingCollection = document.getElementsByTagName('h1');
+            for(const hOne of headingCollection){
+                console.log(hOne.innerText);
+            }
+            const title = document.getElementById('fruit-title');
+            console.log(title.innerText);
+        
+            const places = document.getElementsByClassName('important-places');
+            for(const place of places){
+                console.log(place.innerText);
+            }
+            // query selector
+            const fruitsall = document.querySelectorAll('.fruits-container li');
+            for(fruit of fruitsall){
+                console.log("Showing by query selector : ",fruit.innerText);
+            }
+        
+        */
+    </script>
+</body>
+
+</html>

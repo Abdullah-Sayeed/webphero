@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Explore More events</h1>
+        <button id="button-more">Events</button>
+        <input type="text" name="" id="text-field">
+
+        <script>
+            /* 
+            document.getElementById('button-more').addEventListener('mousemove',function(){
+                console.log('button triggered');
+            });
+            document.getElementById('text-field').addEventListener('focus', function(){
+                console.log('event triggered inside the input area');
+            });
+
+            document.getElementById('button-more').addEventListener('mouseover',function(){
+                console.log('MouseOver Event triggered');
+            });
+            document.getElementById('button-more').addEventListener('mouseenter',function(){
+                console.log('mouseenter event triggered');
+            });
+             */
+            //  document.getElementById('text-field').addEventListener('keydown', function(event){
+            //     console.log(event);
+            // });
+            // document.getElementById('text-field').addEventListener('keydown', function(event){
+            //     console.log(event.target.value);
+            // });
+            // document.getElementById('text-field').addEventListener('keypress', function(event){
+            //     console.log(event.target.value);
+            // });
+            document.getElementById('text-field').addEventListener('keyup', function(event){
+                console.log(event.target.value);
+            });
+            
+
+        </script>
+    </body>
+    </html>
+</body>
+</html>
